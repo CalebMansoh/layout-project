@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.nav{
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.section{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* height: 190vh; */
+  width: 100%;
+}
+
+#section{
+  background-color: palegoldenrod;
+  /* width: 60%; */
+  padding: 80px;
+  text-align: justify;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+#aside{
+  background-color: #1a8e1a;
+  /* width: 20%; */
+  padding: 60px;
+  color: rgb(55, 42, 42);
+  background-attachment: fixed;
+}
+
+#article{
+  background-color: tomato;
+  /* width: 20%; */
+  padding: 50px;
+
+}
+
+#set{
+  position: sticky;
+  top: 60px;
+}
+
+.set{
+  position: sticky;
+  top: 60px;
+}
+
+footer{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  text-align: center;
+}
+
+#span1{
+  background-color: gold;
+  padding: 20px;
+}
+
+#span2{
+  background-color: lightseagreen;
+  padding: 20px;
+}
+
+#sub{
+  text-decoration: none;
+}
+
+/* responsive styles */
+
+@media only screen and (max-width: 768px){
+  .nav{
+    font-size: 20px;
+    position: relative;
+  }
+  .section{
+    display: block;
+    font-size: 15px;
+  }
+  #aside img{
+    display: inline;
+    max-width: 70%;
+    margin-left: 100px;
+  }
+  #article img{
+    max-width: 80%;
+    margin-left: 20%;
+  }
+  
+}
+
+@media only screen and (max-width: 375px){
+  .section{
+    display: block;
+    font-size: 15px;
+  }
+  #aside img{
+    max-width: 100%;
+    margin-left: 1px;
+  }
+  #article img{
+    margin-left: 20px;
+    width: 100%;
+  }
+  #section{
+    font-size: 15px;
+  }
+  footer{
+    font-size: 15px;
+  }
+  
+}
